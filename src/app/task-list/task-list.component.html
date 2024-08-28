@@ -1,0 +1,40 @@
+<div>
+    <app-task-form (taskSaved)="loadTasks()"></app-task-form>
+</div>
+<div class="hero">
+  <div class="sort">
+    <button id="due" (click)="sortTasks('dueDate')">Sort by Due Date</button>
+    <button id=" prio" (click)="sortTasks('priority')">Sort by Priority</button>
+    <button id="sor" (click)="sortTasks('status')">Sort by Status</button>
+  </div>
+  <div class=" medium" *ngFor="let task of tasks">
+    <div>
+      <h3>{{ task.title }}</h3>
+      <p>{{ task.description }}</p>
+      <p>Due Date: {{ task.dueDate | date }}</p>
+      <p>Priority: {{ task.priority }}</p>
+      <p>Status: {{ task.status }}</p>  
+    </div>
+  <div class="display">
+        
+    <button id="edit" (click)="editTask(task)">Edit</button>
+    <button id="del" (click)="deleteTask(task.id)">Delete</button>
+    <button id="do" (click)="changeStatus(task, 'to-do')">To-Do</button>
+    <button id="progress" (click)="changeStatus(task, 'in-progress')">In-Progress</button>
+    <button id="complete" (click)="changeStatus(task, 'completed')">Completed</button>
+        
+  </div>
+
+      <app-task-history [task]="task"></app-task-history>
+
+
+</div>
+
+<footer>
+  <div class="csv-1">
+    <div>
+      <button id="csv" (click)="exportToCSV()">Export to CSV</button>
+    </div>
+  </div>
+</footer> 
+  

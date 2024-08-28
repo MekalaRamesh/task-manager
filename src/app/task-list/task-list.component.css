@@ -1,0 +1,119 @@
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+#due{
+  position: sticky;
+
+}
+
+.medium{
+  background-color: antiquewhite;
+  border-radius: 18px;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 75%;
+
+}
+
+
+.sort{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  position: sticky;
+  top: 0; 
+  right: 10px; 
+  z-index: 1000; 
+}
+.sort button{
+  border-radius: 9px;
+  border: none;
+  background-color: #a59050;
+  color: #fff;
+  height: 30px;
+  width: 150px;
+}
+  
+.hero{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+ 
+
+
+ 
+  
+  #del {
+    background-color: #8f4f7d;
+    color: #fff;
+    cursor: pointer;
+    
+
+  }
+
+ 
+
+  #csv{
+    background-color: #dc3545;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 100px;
+  }
+  
+  #edit{
+    background-color: #4f77a3;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .csv-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #progress{
+    background-color: #c9a70e;
+    color: #fff;
+    cursor: pointer;
+  }
+
+ .display button{
+    margin-left: 90px;
+    height: 40px;
+    width: 100px;
+    border-radius: 9px;
+    border: none;
+  }
+
+  #complete{
+    background-color: #0b651d;
+    color: #fff;
+    cursor: pointer;
+   
+
+  }
+  #do{
+    background-color:#dc3545;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  footer{
+    width: 100%;
+    margin-bottom: 40px;
+  }
